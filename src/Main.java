@@ -54,5 +54,15 @@ public class Main
 
         s = x + y;
         System.out.printf("Ergebnis: %d", s);
+
+        System.out.println("-----------------------------------");
+        System.out.println("Bitte geben Sie eine der folgenden Nummern ein um fortzufahren:");
+        System.out.println("Addieren(1)");
+        System.out.println("Subtrahieren(2)");
+        System.out.println("Multiplizieren(3)");
+        System.out.println("Dividieren(4)");
+        System.out.println("-----------------------------------");
+
+
     }
 }
