@@ -12,21 +12,23 @@ public class Main
     {
         int x = 0;
         int y = 0;
-        int s;
-        boolean z = false;
+        int s = 0;
+        int z = 0;
+        int o = 0;
+
 
         System.out.println("Addition von 2 eingelesenen Werten");
         System.out.printf("----------------------------------\n");
 
 
-        while(z == false)
+        while(z == 0)
         {
             try
             {
                 Scanner sc = new Scanner(System.in);
                 System.out.println("Ersten Wert eingeben:");
                 x = sc.nextInt();
-                z = true;
+                z = 1;
             }
 
             catch(Exception e)
@@ -36,14 +38,14 @@ public class Main
         }
 
 
-        while(z == true)
+        while(z == 1)
         {
             try
             {
                 Scanner sc = new Scanner(System.in);
                 System.out.println("Zweiten Wert eingeben:");
                 y = sc.nextInt();
-                z = false;
+                z = 0;
             }
 
             catch(Exception e)
@@ -53,7 +55,7 @@ public class Main
         }
 
         s = x + y;
-        System.out.printf("Ergebnis: %d", s);
+        System.out.printf("Ergebnis: %d %n", s);
 
         System.out.println("-----------------------------------");
         System.out.println("Bitte geben Sie eine der folgenden Nummern ein um fortzufahren:");
@@ -63,6 +65,18 @@ public class Main
         System.out.println("Dividieren(4)");
         System.out.println("-----------------------------------");
 
+        while(z == 2) {
+            try {
+                Scanner sc = new Scanner(System.in);
 
+                System.out.println("Zahlenkürzel eingeben:");
+                o = sc.nextInt();
+                z = 3;
+            }
+
+            catch(Exception e) {
+                System.out.println("Fehler! Versuchen Sie es erneut!");
+            }
+        }
     }
 }
