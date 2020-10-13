@@ -96,3 +96,4 @@ public class Main
         System.out.printf("Ergebnis: %d", s);
     }
 }
+
