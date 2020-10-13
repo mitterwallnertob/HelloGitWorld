@@ -45,7 +45,7 @@ public class Main
                 Scanner sc = new Scanner(System.in);
                 System.out.println("Zweiten Wert eingeben:");
                 y = sc.nextInt();
-                z = 0;
+                z = 2;
             }
 
             catch(Exception e)
@@ -58,7 +58,7 @@ public class Main
         System.out.printf("Ergebnis: %d %n", s);
 
         System.out.println("-----------------------------------");
-        System.out.println("Bitte geben Sie eine der folgenden Nummern ein um fortzufahren:");
+        System.out.println("Bitte geben Sie eine der folgenden Nummern ein um fortzufahren:\n");
         System.out.println("Addieren(1)");
         System.out.println("Subtrahieren(2)");
         System.out.println("Multiplizieren(3)");
@@ -78,5 +78,21 @@ public class Main
                 System.out.println("Fehler! Versuchen Sie es erneut!");
             }
         }
+        
+        if(o == 1) {
+            s = x + y;
+        }
+        else if(o == 2) {
+            s = x  - y;
+        }
+        else if(o == 3) {
+            s = x  * y;
+        }
+        else if(o == 4) {
+            s = x  / y;
+        }
+
+        System.out.println("-----------------------------------");
+        System.out.printf("Ergebnis: %d", s);
     }
 }
